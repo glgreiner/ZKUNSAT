@@ -1,0 +1,80 @@
+.model bcd_7seg
+.inputs a b c d
+.outputs seg0 seg1 seg2 seg3 seg4 seg5 seg6
+.names d c b a min0
+0000 1
+.names d c b a min1
+0001 1
+.names d c b a min2
+0010 1
+.names d c b a min3
+0011 1
+.names d c b a min4
+0100 1
+.names d c b a min5
+0101 1
+.names d c b a min6
+0110 1
+.names d c b a min7
+0111 1
+.names d c b a min8
+1000 1
+.names d c b a min9
+1001 1
+.names min9 min8 min7 min6 min5 min3 min2 min0 seg0
+1------- 1
+-1------ 1
+--1----- 1
+---1---- 1
+----1--- 1
+-----1-- 1
+------1- 1
+-------1 1
+.names min9 min8 min7 min4 min3 min2 min1 min0 seg1
+1------- 1
+-1------ 1
+--1----- 1
+---1---- 1
+----1--- 1
+-----1-- 1
+------1- 1
+-------1 1
+.names min9 min8 min7 min6 min5 min4 min3 min1 min0 seg2
+1-------- 1
+-1------- 1
+--1------ 1
+---1----- 1
+----1---- 1
+-----1--- 1
+------1-- 1
+-------1- 1
+--------1 1
+.names min9 min8  min6 min5 min3 min2  min0 seg3
+1------ 1
+-1----- 1
+--1---- 1
+---1--- 1
+----1-- 1
+-----1- 1
+------1 1
+.names  min8  min6  min2  min0 seg4
+1--- 1
+-1-- 1
+--1- 1
+---1 1
+.names min9 min8  min6 min5 min4  min0 seg5
+1----- 1
+-1---- 1
+--1--- 1
+---1-- 1
+----1- 1
+-----1 1
+.names min9 min8  min6 min5 min4 min3 min2  seg6
+1------ 1
+-1----- 1
+--1---- 1
+---1--- 1
+----1-- 1
+-----1- 1
+------1 1
+.end

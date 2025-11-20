@@ -1,0 +1,36 @@
+.model bcd_7seg
+.inputs a b c d
+.outputs seg0 seg1 seg2 seg3 seg4 seg5 seg6
+.names d seg3 [8] seg0
+-1- 1
+0-1 1
+.names a b c d seg5 seg6 seg1
+--0--1 1
+---0-0 1
+00--1- 1
+.names a d seg5 seg2
+--1 1
+10- 1
+.names a seg4 seg5 [7] [8] seg3
+-1--- 1
+1-1-- 1
+---01 1
+.names a b d [9] seg4
+0--1 1
+010- 1
+.names b c d seg4 [9] seg5
+0--1- 1
+-1-1- 1
+--1-1 1
+010-- 1
+.names b seg5 [7] seg6
+-11 1
+1-0 1
+.names c d [7]
+1- 1
+-1 1
+.names a b [8]
+11 1
+.names b c [9]
+00 1
+.end
