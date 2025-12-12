@@ -1,7 +1,7 @@
 //
 // Created by anonymized on 12/7/21.
 //
-#pragma once;
+#pragma once
 #ifndef ZKUNSAT_NEW_COMMONS_H
 #define ZKUNSAT_NEW_COMMONS_H
 #include "emp-zk/emp-zk.h"
@@ -17,7 +17,7 @@ extern SVoleF2k<BoolIO<NetIO>> *svole;
 extern F2kOSTriple<BoolIO<NetIO>>* ostriple;
 extern BoolIO<NetIO>* io;
 extern uint64_t constant;
-extern block *data;
+extern block *proof_data;
 extern block *mac;
 extern uint64_t data_mac_pointer;
 #endif //ZKUNSAT_NEW_COMMONS_H

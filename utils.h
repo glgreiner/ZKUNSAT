@@ -268,10 +268,10 @@ inline void inverse(block& inv, block& input){
 
 inline void fill_data_and_mac(block& d, block& m){
     if (data_mac_pointer == svole->param.n){
-        svole->extend_inplace(data, mac, svole->param.n);
+        svole->extend_inplace(proof_data, mac, svole->param.n);
         data_mac_pointer = 0;
     }
-    d = data[data_mac_pointer];
+    d = proof_data[data_mac_pointer];
     m = mac[data_mac_pointer];
     data_mac_pointer = data_mac_pointer + 1;
 

@@ -6,7 +6,7 @@
 int port, party;
 const int threads = 8;
 int DEGREE = 4;
-block *mac, *data;
+block *mac, *proof_data;
 uint64_t data_mac_pointer;
 SVoleF2k <BoolIO<NetIO>> *svole;
 F2kOSTriple <BoolIO<NetIO>> *ostriple;
@@ -34,9 +34,9 @@ int main(int argc, char **argv) {
     uint64_t test_n = svole->param.n;;
     uint64_t mem_need = svole->byte_memory_need_inplace(test_n);
 
-    data = new block[svole->param.n];
+    proof_data = new block[svole->param.n];
     mac = new block[svole->param.n];
-    svole->extend_inplace(data, mac, svole->param.n);
+    svole->extend_inplace(proof_data, mac, svole->param.n);
     cout << "----set up----" << endl;
 
     GF2X P;

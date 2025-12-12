@@ -185,7 +185,7 @@ public:
             hash = hash ^ tmp;
         }
 //        uint64_t  h = _mm_extract_epi64(hash, 0);
-        return Integer(128, hash, ALICE);
+        return Integer(128, &hash, ALICE);
     }
 
     void hash_and_mac(block& hash, block& mac,const Integer& index, const Integer& val ){
