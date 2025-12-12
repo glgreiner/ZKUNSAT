@@ -2,6 +2,8 @@ What's up. Somehow this repo doesn't have a README. Here is a small one so you c
 I took to generate the .prf.unfold file from the program equivalence.c which tests for equivalence
 between Montgomery modulo multiplication and typical (affine) modulo multiplication. Do this:
 
+FIRST (STEP I): git clone emp-ot, emp-tool, emp-zk, and  `cmake . && make && sudo make install` on all of them!
+
 1. `cbmc equivalence.c --dimacs --outfile miter.cnf` 
     - This generates miter.cnf as the .cnf file consisting of the miter harness found in equivalence.c 
     - equivalence.c is well commented and hopefully does not need explaining. It is a 4-bit multiplier.
